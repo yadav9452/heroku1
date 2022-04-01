@@ -9,15 +9,15 @@ app.use(express.json());
 app.use("/users",userController);
 app.use("/movie",movieController);
 
+const PORT = process.env.PORT ||5000;
 
-
-app.listen(5000, async () => {
+app.listen(PORT, async () => {
     try {
         await connect();
     } catch (err) {
         console.log("Something went wrong.... try again");
     }
-    console.log("Listening on Port 5000");
+    console.log(`Listening on Port {PORT}`);
 });
 
 
