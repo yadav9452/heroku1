@@ -17,7 +17,7 @@ app.listen(PORT, async () => {
     } catch (err) {
         console.log("Something went wrong.... try again");
     }
-    console.log(`Listening on Port {PORT}`);
+    console.log(`Listening on Port ${PORT}`);
 });
 
 
